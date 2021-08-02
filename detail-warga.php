@@ -17,19 +17,18 @@ $data=$Db->get_by_id($idwarga);
 //print_r($data);
 //echo "blalala";
 ?>
-    <div class="container">
-   
+    <div class="container">   
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9">
         <h2 class="text-center">Form Detail Registrasi Warga</h2>
-        <hr>
-        <table class="table table-striped table-bordered">
-            <tr>
-                <td>No ID</td>
-                <td><?php echo $data['id']; ?></td>
+        <hr> 
+        <form action="index.php" method="post">
+        <table class="table table-striped table-bordered">       
+        <tr>
+            <th class="bg-info text-white text-center" colspan="2">Biodata Pribadi</th>                            
             </tr>
             <tr>
-                <td>No KTP</td>
+                <td>Nomor KTP</td>
                 <td><?php echo $data['no_ktp']; ?></td>
             </tr>
             <tr>
@@ -43,10 +42,10 @@ $data=$Db->get_by_id($idwarga);
             <tr>
                 <td>Nomor HP</td>
                 <td><?php echo $data['no_hp']; ?></td>
-            </tr>            
+            </tr>
         </table>
         <a href="index.php" class="btn btn-primary font-weight-bold">Kembali</a>
-
+    </form>
         </div>
     </div>
     </div>

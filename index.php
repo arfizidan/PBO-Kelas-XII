@@ -86,7 +86,7 @@ if(isset($_GET['hapus'])){
     
     ?> -->
         <table class="table table-bordered text-center " border=1>
-        <tr class="bg-info text-white">
+        <tr class="bg-info text-white font-weight-bold">
             <td>No</td>
             <td>No KTP</td>
             <td>Nama Lengkap</td>
