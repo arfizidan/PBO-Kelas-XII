@@ -9,8 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <body style="margin-left: 300px">
-    <div class="container">
-   
+    
+<div class="container">  
     <div class="row">
         <div class="col-md-9">
         <h2 class="text-center">Form Registrasi Warga</h2>
@@ -23,22 +23,22 @@
             </tr>
             <tr>
                 <td>Nomor KTP</td>
-                <td> <input class="form-group" type="number" name="no_ktp" id="no_ktp" placeholder="Nomor KTP" required></td>
+                <td> <input class="form-control" type="number" name="no_ktp" id="no_ktp" placeholder="Masukkan No KTP" required></td>
             </tr>
             <tr>
                 <td>Nama Lengkap</td>
-                <td><input class="form-group" type="text" name="nama_lengkap" id="nama_lengkap" placeholder="Nama Lengkap" required></td>
+                <td><input class="form-control" type="text" name="nama_lengkap" id="nama_lengkap" placeholder="Masukkan Nama Lengkap " required></td>
             </tr>
             <tr>
                 <td>Alamat Lengkap</td>
-                <td> <input class="form-group" type="text" name="alamat_lengkap" id="alamat_lengkap" placeholder="Alamat Lengkap" required></td>
-            </tr>
+                <td> <textarea class="form-control" type="text" name="alamat_lengkap" id="alamat_lengkap" placeholder="Masukkan Alamat Lengkap " required></textarea></td>
+            </tr
             <tr>
                 <td>Nomor HP</td>
-                <td><input class="form-group" type="number" name="no_hp" id="no_hp" placeholder="Nomor HP" required></td>
+                <td><input class="form-control" type="number" name="no_hp" id="no_hp" placeholder="Masukkan Nomor Handphone " required></td>
             </tr>
         </table>        
-        <button class="btn btn-primary" name="daftar" type="submit">Daftar </button>
+        <button class="btn btn-primary font-weight-bold" name="daftar" type="submit">Daftar </button>
     </form>
 
     <!-- <a href="index.php"><button class="btn btn-info mr-2">Kembali </button></a> -->

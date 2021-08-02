@@ -45,7 +45,7 @@ $data=$Db->get_by_id($idwarga);
                 <td><?php echo $data['no_hp']; ?></td>
             </tr>            
         </table>
-        <a href="index.php" class="btn btn-primary">Kembali</a>
+        <a href="index.php" class="btn btn-primary font-weight-bold">Kembali</a>
 
         </div>
     </div>

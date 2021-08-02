@@ -34,6 +34,21 @@ Class MyDb {
         $query->execute();
         return $query->fetch();
     }
+
+    public function update_data($id,$no_ktp,$nama_lengkap,$alamat_lengkap,$no_hp)
+    {
+        $query = $this->db->prepare("UPDATE data_warga SET no_ktp=?,nama_lengkap=?,alamat_lengkap=?,no_hp=? WHERE id=?");
+
+        $query->bindParam(1, $no_ktp);
+        $query->bindParam(2, $nama_lengkap);
+        $query->bindParam(3, $alamat_lengkap);
+        $query->bindParam(4, $no_hp);        
+        $query->bindParam(5, $id);
+        
+        $query->execute();
+        return $query->rowCount();
+    }
+
     public function delete($id_warga)
     {
         $query = $this->db->prepare("DELETE FROM data_warga where id=?");
